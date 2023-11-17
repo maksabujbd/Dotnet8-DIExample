@@ -7,10 +7,10 @@ Console.WriteLine("Transient vs Singleton vs Scope");
 var scope1 = new Scope();
 var scope2 = new Scope();
 
-var sample1A = scope1.SingletonProvider.GetSample();
-var sample1B = scope1.SingletonProvider.GetSample();
-var sample2A = scope2.SingletonProvider.GetSample();
-var sample2B = scope2.SingletonProvider.GetSample();
+var sample1A = scope1.ScopedProvider.GetSample();
+var sample1B = scope1.ScopedProvider.GetSample();
+var sample2A = scope2.ScopedProvider.GetSample();
+var sample2B = scope2.ScopedProvider.GetSample();
 
 
 Console.WriteLine(sample1A.Id);
